@@ -27,6 +27,7 @@ class Dashboard extends BaseController
         $info['pasien'] = $Assessment_model->findAll();
 
         return view('form/neonatus', $info);
+
     }
 
      public function neo(): string
@@ -317,6 +318,7 @@ class Dashboard extends BaseController
     {
         $body = $this->request->getPost();
         $simpan['test'] =  $this->mdata->simpandata($body);
+        $body_id = $this->test_model->generate_id();
 
         return redirect()->to('dashboard/data');
     }
@@ -331,12 +333,11 @@ class Dashboard extends BaseController
     }
 
 
-    // public function delete($id);
-    // {
-    //     $this->test_model->delete($id);
-    //     session()->setFlashdata('pesan', 'Data Berhasil Dihapus');
-    //     return redirect()->to('pasien','form1');
-    // }
+    public function delete1($id)
+    {
+        $this->test_model->delete($id);
+        return redirect()->to('dashboard/form1');
+    }
 
 
 

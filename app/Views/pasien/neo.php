@@ -43,7 +43,7 @@
       <td>
         <a href="" class="btn btn-primary">Detail</a>
         <a href="" class="btn btn-warning">Update</a>
-        <a href="" class="btn btn-danger">Delete</a>
+        <a href="<?= site_url('dashboard/delete1/') . $data['id']; ?>" class="btn btn-danger">Delete</a>
       </td>
     </tr>
   <?php endforeach; ?>
