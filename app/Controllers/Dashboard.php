@@ -333,12 +333,7 @@ class Dashboard extends BaseController
     }
 
 
-    public function delete1($id)
-    {
-        $this->test_model->delete($id);
-        return redirect()->to('dashboard/form1');
-    }
-
+   
 
 
 

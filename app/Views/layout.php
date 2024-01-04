@@ -142,9 +142,6 @@
 <br><br><img src="<?= base_url('assets/struktur.jpg') ?>" class="card-img-top" width="30px">
 
 
-<br><br><nav class="navbar navbar-light bg-primary" style="text-align: center;">
-  <div style="text-align: center;">Copyright © RSUD M. Yunus Bengkulu - Prov Bengkulu</div>
-</nav>
 
 
 
